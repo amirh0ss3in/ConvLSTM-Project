@@ -17,5 +17,9 @@ V 1.0.0 , hyperparameter tuning is needed.
 
 # cifar10.py
 Maximum validation accuracy: 81.78% (on 15 epochs; withoun any image processing) <br>
-V 1.0.0 , hyperparameter tuning is needed.
+V 1.0.0 , hyperparameter tuning is needed.<br>
+Neural network architecture is different than the others.
 
+# Street_view.py
+Maximum validation accuracy: 85.72% (on 50 epochs; withoun any image processing)<br>
+V 1.0.0 , hyperparameter tuning is needed.
