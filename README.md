@@ -6,7 +6,7 @@ Maximum validation accuracy: 99.55% (on 15 epochs; withoun any image processing)
 V 1.0.0 , hyperparameter tuning is needed.
 
 # fashion_mnist.py
-Maximum validation accuracy: 91.38% (on 15 epochs; withoun any image processing)
+Maximum validation accuracy: 91.38% (on 15 epochs; withoun any image processing)<br>
 V 1.0.0 , hyperparameter tuning is needed.
 
 # noisy_dataset.py
