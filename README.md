@@ -14,3 +14,8 @@ Maximum validation accuracy: 98.97% (on 15 epochs; withoun any image processing)
 On this dataset, the ratio between training and test data is 2:1.<br>
 This result was obtaind with 50,000 training images and 25,000 testing images. <br>
 V 1.0.0 , hyperparameter tuning is needed.
+
+# cifar10.py
+Maximum validation accuracy: 81.78% (on 15 epochs; withoun any image processing) <br>
+V 1.0.0 , hyperparameter tuning is needed.
+
