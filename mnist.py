@@ -1,5 +1,5 @@
 'Developed by Amirhossein Rezaei'
-#Maximum validation accuracy: 99.55% (on 15 epochs; withoun any image processing)
+#Maximum validation accuracy: 99.55% (on 15 epochs; without any image processing)
 #V 1.0.0 , hyperparameter tuning is needed.
 
 from keras.datasets import mnist
