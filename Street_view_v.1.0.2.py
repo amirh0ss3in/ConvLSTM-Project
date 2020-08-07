@@ -1,5 +1,5 @@
 'Developed by Amirhossein Rezaei'
-#Maximum validation accuracy: 95.59% (on 50 epochs; withoun any image processing)
+#Maximum validation accuracy: 95.59% (on 50 epochs; Images were grayescaled)
 #V 1.0.2 , hyperparameter tuning is needed.
 
 from google.colab import drive
