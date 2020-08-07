@@ -1,5 +1,5 @@
 'Developed by Amirhossein Rezaei'
-#Maximum validation accuracy: 85.72% (on 50 epochs; withoun any image processing)
+#Maximum validation accuracy: 94.65% (on 15 epochs; withoun any image processing)
 #V 1.0.0 , hyperparameter tuning is needed.
 
 from google.colab import drive
@@ -109,13 +109,15 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 model.summary()
  
  
-model.fit(X_tr, y_train, validation_data=(X_te, y_test) ,batch_size=128 ,epochs=15)
+model.fit(train_images,train_labels , validation_data=(test_images, test_labels) ,batch_size=128 ,epochs=15)
 
 
 
 import math
 #n is Index of image in testing dataset.
 n=2
+X_te=test_images
+
 
 #First convlstm layer
 #Enter number of filters:
