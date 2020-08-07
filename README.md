@@ -19,6 +19,9 @@ V 1.0.0, hyperparameter tuning is needed.
 ### Street_view_v.1.0.1.py
 Maximum validation accuracy: 94.65% (on 15 epochs; withoun any image processing)<br>
 hyperparameter tuning is needed.
+### Street_view_v.1.0.1.py
+Maximum validation accuracy: 94.81% (on 15 epochs; withoun any image processing) <br>
+hyperparameter tuning is needed.
 
 ## cifar10.py
 Maximum validation accuracy: 83.35% (on 30 epochs; withoun any image processing) <br>
