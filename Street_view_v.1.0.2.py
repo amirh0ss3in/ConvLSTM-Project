@@ -116,4 +116,80 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 model.summary()
  
  
-model.fit(train_images,train_labels , validation_data=(test_images, test_labels) ,batch_size=128 ,epochs=100)
+model.fit(train_images,train_labels , validation_data=(test_images, test_labels) ,batch_size=128 ,epochs=15)
+
+
+X_te=test_images
+
+import math
+#n is Index of image in testing dataset.
+n=2
+
+#First convlstm layer
+#Enter number of filters:
+nf1=64
+inp= model.inputs
+print("\n \n First convlstm layer")
+f1=Model(inputs= inp, outputs= model.layers[0].output).predict(X_te[n:n+1])
+
+fig1=plt.figure(figsize=(9, 9))
+
+for i in range(nf1):
+  s=f1[0,0,:,:,i]
+  fig1.add_subplot(math.ceil(nf1/8),8,i+1)
+  plt.imshow(s, interpolation='nearest') 
+plt.show()
+
+
+
+#Second convlstm layer
+#Enter number of filters:
+nf2=32
+inp2= model.inputs
+print("\n \n Second convlstm layer")
+f2=Model(inputs= inp, outputs= model.layers[3].output).predict(X_te[n:n+1])
+
+fig2=plt.figure(figsize=(9, 9))
+
+for i in range(nf2):
+  s=f2[0,0,:,:,i]
+  fig2.add_subplot(math.ceil(nf1/8),8,i+1)
+  plt.imshow(s, interpolation='nearest') 
+plt.show()
+
+
+
+#Third convlstm layer
+#Enter number of filters:
+nf3=32
+inp3= model.inputs
+print("\n \n Third convlstm layer")
+f3=Model(inputs= inp, outputs= model.layers[5].output).predict(X_te[n:n+1])
+
+fig3=plt.figure(figsize=(9, 9))
+
+for i in range(nf3):
+  s=f3[0,0,:,:,i]
+  fig3.add_subplot(math.ceil(nf1/8),8,i+1)
+  plt.imshow(s, interpolation='nearest') 
+plt.show()
+
+
+
+
+
+#Convolutional layer
+#Enter number of filters:
+nf4=128
+
+print("\n \n Convolutional layer")
+f4=Model(inputs= inp, outputs= model.layers[11].output).predict(X_te[n:n+1])
+
+fig4=plt.figure(figsize=(9, 9))
+
+for i in range(nf4):
+  s=f4[0,:,:,i]
+  fig4.add_subplot(math.ceil(nf4/8),8,i+1)
+  plt.imshow(s, interpolation='nearest') 
+plt.show()
+
